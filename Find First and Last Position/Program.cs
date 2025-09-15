@@ -5,6 +5,8 @@
         Console.WriteLine(string.Join(",", SearchRange([ 5, 7, 7, 8, 8, 10 ], 8))); // [3,4]
         Console.WriteLine(string.Join(",", SearchRange([5, 7, 7, 8, 8, 10 ], 6))); // [-1,-1]
         Console.WriteLine(string.Join(",", SearchRange(new int[] { }, 0)));             // [-1,-1]
+        Console.WriteLine(string.Join(",", SearchRange(new int[] {0,1}, 1)));             // [1,-1]
+
 
     }
     public static int[] SearchRange(int[] nums, int target)
